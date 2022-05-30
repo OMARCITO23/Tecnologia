@@ -84,7 +84,7 @@ input{
 	.nav-header{
 		display: none;
 	}
-
+	
 	.input-div:checked + .nav-header{
 		display: flex;
 		position: fixed;
@@ -94,6 +94,10 @@ input{
 		width: 100vw;
 		height: 100vw;
 		justify-content: center;
+	}
+	
+	.img-header{
+		margin-right:10px;
 	}
 
 	.ul-1{

@@ -38,7 +38,7 @@ input{
 	display: none;
 }
 
-.img-header{
+.label-div{
 	display: none;
 }
 
@@ -100,36 +100,42 @@ input{
   		
 
 @media screen and (max-width: 774px){
-	.img-header{
-		display: block;
+	.div-header{
+		display: none;
+	}	
+
+	.label-div{
+		display: flex;
 	}
 
 	.nav-header{
-		display: none;
+		clip-path: polygon(100% 0, 100% 0%, 100% 0, 100% 0);
+		transition: .5s ease all;
 	}
 
 	.input-div:checked + .nav-header{
 		display: flex;
+		clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
 		position: fixed;
 		top: 80;
-		background-color:
-		tomato;
+		background: #00495dc7;
 		width: 100vw;
-		height: 100vw;
-		justify-content: center;
+		height: auto;
 	}
 
+	.input-li:checked + .ul-2{
+		position: relative;
+	}
+
+	.input-li:checked + .ul-2{
+		background: none;
+		top: 0;
+		gap: 2px;
+	}
+ 
 	.ul-1{
-		flex-direction: column;
 		display: flex;
-		width: 100vw;
-		height: 100vw;
-		justify-content: space-around;
+		flex-direction: column;
+		margin-left: 2%;
 	}
-
-	.ul-1 a{
-		align-items: center;
-		padding-left:-100vw ;
-	}
-
 }

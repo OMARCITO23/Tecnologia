@@ -10,18 +10,24 @@ body{
 	font-family: 'M PLUS 2', sans-serif;
 	font-family: 'Rubik', sans-serif;
 	font-family: 'Shippori Antique', sans-serif;
-	background:#434242;
+	background:#26B6DE;
+}
+
+section{
+	height:500px;
+	width: 100vw;
+	display: flex;
 }
 
 header{
 	height: 80px;
 	width: 100vw;
-	background: #1c1c1c;
+	background: #00495dc7;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-    border-bottom: 1px #272424 solid;
-    box-shadow: 5px 0 10px rgba(0, 0, 0, .8);
+    border-bottom: 1px #3551a6e6 solid;
+    box-shadow: 5px 0 10px #000513;
 }
 
 label{
@@ -46,15 +52,11 @@ input{
 	flex-direction: column ;
 	position: absolute;
 	gap: 30px;
-	background: #1c1c1c;
+	background: #00495dc7;
 }
 
 .h1-header{
 	margin-left: 10px;
-}
-
-.nav-header{
-
 }
 
 .ul-1{
@@ -76,6 +78,27 @@ input{
 	padding: 5px;
 }
 
+.card{
+	box-sizing: border-box;
+	width: 97%;
+	height: 50%;
+	margin: auto;
+	display: flex;
+}
+
+.p-card{
+	color: #fff;
+	transition: 1s ease all;
+	clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+	font-size: 18px;
+}
+
+.input-card:checked + .p-card {
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+	display: flex;
+}
+  		
+
 @media screen and (max-width: 774px){
 	.img-header{
 		display: block;
@@ -84,7 +107,7 @@ input{
 	.nav-header{
 		display: none;
 	}
-	
+
 	.input-div:checked + .nav-header{
 		display: flex;
 		position: fixed;
@@ -94,10 +117,6 @@ input{
 		width: 100vw;
 		height: 100vw;
 		justify-content: center;
-	}
-	
-	.img-header{
-		margin-right:10px;
 	}
 
 	.ul-1{

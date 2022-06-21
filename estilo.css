@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+*::-webkit-scrollbar{
+	width: 4px;
+	background: black;
+}
+
+*::-webkit-scrollbar-thumb{
+	background: #0d4453;
+	border-radius: 5px;
+}
+
+body{
+	font-family: 'M PLUS 2', sans-serif;
+	font-family: 'Rubik', sans-serif;
+	font-family: 'Shippori Antique', sans-serif;
+	background:#D2D3D4;
+}
+
+section{
+	display: flex;
+	align-items: center;
+	height: 600px;
+	width:80vw;
+	margin: 10px auto;
+}
+
+header{
+	height: 80px;
+	background: #04586ec7;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    border-bottom: 1px #596384e6 solid;
+    box-shadow: 5px 0 10px #000513;
+}
+
+label{
+	cursor: pointer;
+}
+
+input{
+	display: none;
+}
+
+.label-div{
+	display: none;
+}
+
+.div-header{
+	display: flex;
+	align-items: center;
+}
+
+.input-li:checked + .ul-2{
+	display: flex;
+	flex-direction: column ;
+	position: absolute;
+	gap: 30px;
+	background: #00495dc7;
+}
+
+.h1-header{
+	margin-left: 10px;
+}
+
+.ul-1{
+	font-size: 20px;
+	margin-right: 30px;
+	display: flex;
+	gap: 20px;
+}
+
+.ul-1 a{
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+}
+
+.ul-2{
+	display: none;
+	top: 79px;
+	padding: 5px;
+}
+
+.card{
+	background: #262B69;
+	border-radius: 10px;
+	gap:45px;
+	display: flex;
+	height: 55%;
+}
+
+.label-sec{
+	display: flex;
+	align-items: center;
+}
+
+.label-sec img{
+	background: #364E85;
+	border: 1px #233154 solid;
+	border-radius: 30px;
+	box-shadow: 0px 0px 18px 0px rgb(31.875, 31.875, 31.875);
+}
+
+.p-card{
+	display: flex;
+	align-items: center;
+	color: #dfdfdf;
+	transition: 1s ease all;
+	clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+	font-size: auto;
+	overflow: auto;
+}
+
+
+.input-card:checked + .p-card {
+	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+}
+  		
+
+@media screen and (max-width: 774px){
+	.div-header{
+		display: none;
+	}	
+
+	.label-div{
+		display: flex;
+	}
+
+	.nav-header{
+		clip-path: polygon(100% 0, 100% 0%, 100% 0, 100% 0);
+		transition: .5s ease all;
+	}
+
+	.input-div:checked + .nav-header{
+		display: flex;
+		clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+		position: fixed;
+		top: 80;
+		background: #00495dc7;
+		width: 100vw;
+		height: auto;
+	}
+
+	.input-li:checked + .ul-2{
+		position: relative;
+	}
+
+	.input-li:checked + .ul-2{
+		background: none;
+		top: 0;
+		gap: 2px;
+	}
+ 
+	.ul-1{
+		display: flex;
+		flex-direction: column;
+		margin-left: 2%;
+	}
+}

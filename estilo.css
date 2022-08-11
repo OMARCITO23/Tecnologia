@@ -174,10 +174,10 @@ aside h1, h3, p{
 		display: flex;
 		flex-direction: column;
 		margin-left: 2%;
+        }
+	
+	.background h1{
+ 		font-size: 4em;
+		text-align: center;
 	}
-}
-
-@media (min-width: 767px)
-header{
-	background:red;
 }

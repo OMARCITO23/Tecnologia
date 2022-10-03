@@ -243,5 +243,10 @@ aside img{
 		width: 90%;
 		height: unset;
 	}
+	
+	.flex{
+		display: flex;
+		flex-direction: column;
+	}
 }
 
